@@ -33,4 +33,4 @@ The application is accepted if:
 
 ###  What is the difference between id and class in CSS? [2p]
 #### Your answer: 
-[add your answer here]
+An id is unique, while the class gives attributes to a group of elements.
