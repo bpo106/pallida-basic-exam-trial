@@ -18,11 +18,12 @@ namespace Dictionary
             AddWord("korte", "pear");
             //add more words to your dictionary
 
-            RemoveWord("fa");
+            RemoveWord("korte");
 
-            TranslateToEnglish("alma");
+            Console.WriteLine(TranslateToEnglish("fa"));
 
-            TranslateToHungarian("orange");
+            Console.WriteLine(TranslateToHungarian("apple"));
+            Console.ReadLine();
 
         }
 
@@ -49,13 +50,15 @@ namespace Dictionary
         // Example: you give it a parameter "apple" and it's output is "alma"
         public static string TranslateToHungarian(string english)
         {
-            string hungarian;
-            if (Dictionary.TryGetValue(english, out hungarian))
+            var Dictionary2 = new Dictionary<string, string>();
+
+            foreach (var element in Dictionary)
             {
-                return hungarian;
+                if (!Dictionary2.ContainsKey(element.Value))
+                    Dictionary2.Add(element.Value, element.Key);
             }
 
-            else return "nothing";
+            return Dictionary2[english];
         }
     }
 }

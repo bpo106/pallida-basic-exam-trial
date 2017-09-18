@@ -4,6 +4,13 @@ namespace NameFromEmail
 {
     class Program
     {
+        static string Subname (char[]emailchar, int start, int end)
+        {
+            char[] letters = new string(emailchar, start, end).ToCharArray();
+            letters[0] = char.ToUpper(letters[0]);
+            return new string(letters);
+        }
+
         static string NameFromEmail (string email)
         {
             var emailchar = email.ToCharArray();
@@ -12,17 +19,11 @@ namespace NameFromEmail
 
             for (i = 0; email[i] != '.'; i++) ;
 
-            string firstName = new string(emailchar, 0, i);
-            char[] letters = firstName.ToCharArray();
-            letters[0] = char.ToUpper(letters[0]);
-            firstName = new string(letters);
+            string firstName = Subname(emailchar, 0, i);
 
             for (j = 0; email[j + i] != '@'; j++) ;
 
-            string lastName = new string(emailchar, i + 1, j - 1);
-            letters = lastName.ToCharArray();
-            letters[0] = char.ToUpper(letters[0]);
-            lastName = new string(letters);
+            string lastName = Subname(emailchar, i + 1, j - 1);
 
             email = string.Concat(lastName, " ", firstName);
 
