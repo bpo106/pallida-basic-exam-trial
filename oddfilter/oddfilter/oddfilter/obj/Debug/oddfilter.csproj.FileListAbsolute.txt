@@ -1,0 +1,7 @@
+C:\Users\Boldizsár\pallida-basic-exam-trial-master\oddfilter\oddfilter\oddfilter\bin\Debug\oddfilter.exe.config
+C:\Users\Boldizsár\pallida-basic-exam-trial-master\oddfilter\oddfilter\oddfilter\bin\Debug\oddfilter.exe
+C:\Users\Boldizsár\pallida-basic-exam-trial-master\oddfilter\oddfilter\oddfilter\bin\Debug\oddfilter.pdb
+C:\Users\Boldizsár\pallida-basic-exam-trial-master\oddfilter\oddfilter\oddfilter\obj\Debug\oddfilter.csprojResolveAssemblyReference.cache
+C:\Users\Boldizsár\pallida-basic-exam-trial-master\oddfilter\oddfilter\oddfilter\obj\Debug\oddfilter.csproj.CoreCompileInputs.cache
+C:\Users\Boldizsár\pallida-basic-exam-trial-master\oddfilter\oddfilter\oddfilter\obj\Debug\oddfilter.exe
+C:\Users\Boldizsár\pallida-basic-exam-trial-master\oddfilter\oddfilter\oddfilter\obj\Debug\oddfilter.pdb
