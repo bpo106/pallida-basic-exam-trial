@@ -50,15 +50,11 @@ namespace Dictionary
         // Example: you give it a parameter "apple" and it's output is "alma"
         public static string TranslateToHungarian(string english)
         {
-            var Dictionary2 = new Dictionary<string, string>();
-
             foreach (var element in Dictionary)
             {
-                if (!Dictionary2.ContainsKey(element.Value))
-                    Dictionary2.Add(element.Value, element.Key);
+                if (element.Value == english) return element.Key;
             }
-
-            return Dictionary2[english];
+            return "nothing";
         }
     }
 }
